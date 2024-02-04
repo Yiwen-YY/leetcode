@@ -1,4 +1,4 @@
-package com.yiwen.array._0977;
+package pers.yiwen.array._0977;
 
 import java.util.Arrays;
 

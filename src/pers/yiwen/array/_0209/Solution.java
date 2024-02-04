@@ -1,4 +1,4 @@
-package com.yiwen.array._0209;
+package pers.yiwen.array._0209;
 // Minimum Size Subarray Sum
 public class Solution {
     public int minSubArrayLen(int target, int[] nums) {

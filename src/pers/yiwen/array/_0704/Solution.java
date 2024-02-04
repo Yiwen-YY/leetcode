@@ -1,4 +1,4 @@
-package com.yiwen.array._0704;
+package pers.yiwen.array._0704;
 // Binary Search
 public class Solution {
     public int search(int[] nums, int target) {

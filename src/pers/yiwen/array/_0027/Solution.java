@@ -1,4 +1,4 @@
-package com.yiwen.array._0027;
+package pers.yiwen.array._0027;
 
 import java.util.Arrays;
 // Remove Element
