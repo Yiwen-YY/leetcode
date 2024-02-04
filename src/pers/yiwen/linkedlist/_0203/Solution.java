@@ -20,19 +20,16 @@ public class Solution {
        dummy.next = head;
        ListNode node = dummy;
        ListNode temp = node.next;
+
        while (temp != null) {
            if (temp.val == val) {
                node.next = temp.next;
-           }
-               node = node.next;
-
-           if (node != null) {
-               temp = node.next;
            } else {
-               temp = null;
+               node = node.next;
            }
-
+           temp = node.next;
        }
+
        return dummy.next;
     }
 
@@ -40,6 +37,7 @@ public class Solution {
         int[] nums = new int[]{1, 7, 7, 5};
         ListNode head = new ListNode(nums[0]);
         ListNode node = head;
+
         for (int i = 1; i < nums.length; i++) {
             node.next = new ListNode(nums[i]);
             node = node.next;
@@ -47,7 +45,7 @@ public class Solution {
         node = head;
 
         Solution solution = new Solution();
-        head = solution.removeElements(head, 7);
+        solution.removeElements(head, 7);
 
         while (node != null) {
             System.out.println(node.val);
