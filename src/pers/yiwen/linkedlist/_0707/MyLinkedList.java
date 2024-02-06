@@ -1,5 +1,7 @@
 package pers.yiwen.linkedlist._0707;
 
+import pers.yiwen.linkedlist.ListNode;
+// Design Linked List
 class MyLinkedList {
     ListNode head;
     int size;

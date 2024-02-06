@@ -1,8 +1,8 @@
-package pers.yiwen.linkedlist._0024;
+package pers.yiwen.linkedlist;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode() {
     }

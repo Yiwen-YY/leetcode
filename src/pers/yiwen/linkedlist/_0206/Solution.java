@@ -1,5 +1,7 @@
 package pers.yiwen.linkedlist._0206;
 
+import pers.yiwen.linkedlist.ListNode;
+// Reverse Linked List
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode cur = head;

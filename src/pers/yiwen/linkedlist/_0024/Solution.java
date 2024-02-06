@@ -1,5 +1,7 @@
 package pers.yiwen.linkedlist._0024;
 
+import pers.yiwen.linkedlist.ListNode;
+// Swap Nodes in Pairs
 public class Solution {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {

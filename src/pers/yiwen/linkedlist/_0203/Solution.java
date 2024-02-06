@@ -1,20 +1,8 @@
 package pers.yiwen.linkedlist._0203;
+
+import pers.yiwen.linkedlist.ListNode;
 // Remove Linked List Elements
 public class Solution {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {
-
-        }
-        ListNode(int val) {
-
-            this.val = val;
-        }
-        ListNode(int val, ListNode next) {
-            this.val = val; this.next = next;
-        }
-    }
     public ListNode removeElements(ListNode head, int val) {
        ListNode dummy = new ListNode();
        dummy.next = head;
