@@ -10,7 +10,7 @@ public class Solution {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
 
-        if (nums[0] > target) {
+        if (nums[0] > 0 && nums[0] > target) {
             return result;
         }
 
