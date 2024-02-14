@@ -4,14 +4,13 @@ public class Solution {
     public String reverseStr(String s, int k) {
         char[] str = s.toCharArray();
 
-        int i = 1;
-        while (str.length < (i + 1) * 2 * k) {
-            int left = (i - 1) * 2 * k;
+        for (int i = 0; str.length > i * 2 * k; i++) {
+            int left = i * 2 * k;
             int right;
             if (str.length < (i * 2 + 1) * k) {
                 right = str.length - 1;
             } else {
-                right = ((i - 1) * 2 + 1) * k - 1;
+                right = (i * 2 + 1) * k - 1;
             }
 
             while (left < right) {
@@ -21,7 +20,6 @@ public class Solution {
                 left++;
                 right--;
             }
-            i++;
         }
 
         return new String(str);
