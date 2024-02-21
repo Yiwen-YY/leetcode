@@ -8,7 +8,5 @@ public class MyQueueTest {
         System.out.println(myQueue.peek());
         System.out.println(myQueue.pop());
         System.out.println(myQueue.empty());
-
     }
-
 }

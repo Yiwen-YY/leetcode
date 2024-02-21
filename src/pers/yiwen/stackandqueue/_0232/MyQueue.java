@@ -4,34 +4,45 @@ import java.util.Stack;
 
 // Implement Queue using Stacks
 class MyQueue {
-    Stack<Integer> stackIn, stackOut;
+    Stack<Integer> stack, stackTemp;
     public MyQueue() {
-        stackIn = new Stack<>();
-        stackOut = new Stack<>();
+        stack = new Stack<>();
+        stackTemp = new Stack<>();
     }
 
     public void push(int x) {
-        stackIn.push(x);
+        stack.push(x);
     }
 
     public int pop() {
+        while (!stack.empty()) {
+            stackTemp.push(stack.pop());
+        }
 
+        int num = stackTemp.pop();
+
+        while (!stackTemp.empty()) {
+            stack.push(stackTemp.pop());
+        }
+
+        return num;
     }
 
     public int peek() {
+        while (!stack.empty()) {
+            stackTemp.push(stack.pop());
+        }
 
+        int num = stackTemp.peek();
+
+        while (!stackTemp.empty()) {
+            stack.push(stackTemp.pop());
+        }
+
+        return num;
     }
 
     public boolean empty() {
-        stackIn.empty();
+        return stack.empty();
     }
 }
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
- * obj.push(x);
- * int param_2 = obj.pop();
- * int param_3 = obj.peek();
- * boolean param_4 = obj.empty();
- */
